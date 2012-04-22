@@ -100,11 +100,15 @@ Wrannings Fix
 }
 ```
 
-2.NSMutableArray-MultipleSort.m:60
-```objc while ((eachObject = va_arg(argumentList, id))) ```
+2.NSMutableArray-MultipleSort.m:60<br>
+```objc
+while ((eachObject = va_arg(argumentList, id))) 
+```
 
 3.NSObject-MissingKV.h:16
-```objc #endif//; ```
+```objc 
+#endif//; 
+```
 
 4.SQLiteInstanceManager.m:73
 ```objc
@@ -115,5 +119,7 @@ Wrannings Fix
 ```
 
 5.SQLiteInstanceManager.h:57
-```objc @property (readwrite,retain,nonatomic) NSString *databaseFilepath;```
+```objc
+@property (readwrite,retain,nonatomic) NSString *databaseFilepath;
+```
 
