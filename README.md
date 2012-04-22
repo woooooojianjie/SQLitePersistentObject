@@ -84,10 +84,10 @@ us to revert changes to one or more properties, respectively, by name.
 Wrannings Fix
 ======================
 
-
-1.
-SQLitePersistentObject.m:1280
-- (void)dealloc{
+1.SQLitePersistentObject.m:1280
+```objc
+- (void)dealloc
+{
     // -elf, fix observer leaked
     for (NSString *oneProp in [[self class] propertiesWithEncodedTypes])
     {
@@ -98,19 +98,22 @@ SQLitePersistentObject.m:1280
      [[self class] unregisterObject:self];
      [super dealloc];
 }
+```
 
 2.NSMutableArray-MultipleSort.m:60
-while ((eachObject = va_arg(argumentList, id)))
+```objc while ((eachObject = va_arg(argumentList, id))) ```
 
 3.NSObject-MissingKV.h:16
-#endif//;
+```objc #endif//; ```
 
 4.SQLiteInstanceManager.m:73
+```objc
 - (id)autorelease
 {
      return self;
 }
+```
 
 5.SQLiteInstanceManager.h:57
-@property (readwrite,retain,nonatomic) NSString *databaseFilepath;
+```objc @property (readwrite,retain,nonatomic) NSString *databaseFilepath;```
 
