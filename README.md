@@ -81,7 +81,7 @@ us to revert changes to one or more properties, respectively, by name.
 `+ (void)clearCache;`
 
 
-Wrannings Fix
+Warnings Fix
 ======================
 
 1.SQLitePersistentObject.m:1280
